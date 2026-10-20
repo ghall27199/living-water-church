@@ -149,3 +149,56 @@ nav ul li a{
     margin-bottom:20px;
     color:white;
 }
+.pastor-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+
+    flex-wrap:wrap;
+
+    max-width:1200px;
+    margin:auto;
+}
+
+.pastor-image{
+    flex:1;
+    min-width:300px;
+}
+
+.pastor-info{
+    flex:2;
+    min-width:300px;
+
+    text-align:left;
+}
+
+.pastor-info h1{
+    color:white;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.bio{
+    color:white;
+
+    font-size:22px;
+    line-height:1.8;
+
+    background:rgba(0,0,0,.5);
+
+    padding:25px;
+
+    border-radius:15px;
+}
+
+.pastor-photo{
+    width:100%;
+    max-width:400px;
+
+    border-radius:15px;
+
+    border:5px solid white;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.5);
+}
