@@ -4,14 +4,49 @@
     box-sizing:border-box;
 }
 
+body{
+    font-family:Arial,sans-serif;
+}
+
+/* Navigation */
+
+nav{
+    background:#003366;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Hero */
+
 .hero{
     height:100vh;
 
     background:
-    linear-gradient(
-        rgba(0,0,0,.4),
-        rgba(0,0,0,.4)
-    ),
+    linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
     url('../living water coverpage.jpg');
 
     background-size:cover;
@@ -35,25 +70,40 @@
 
 .hero-content h2{
     max-width:800px;
-    margin:auto;
 }
 
 .hero-content p{
     margin:20px;
-    font-size:1.3rem;
 }
+
+/* Buttons */
 
 .btn{
     display:inline-block;
-    margin:10px;
     padding:15px 30px;
+    margin:10px;
     background:#800080;
     color:white;
-    text-decoration:none;
     border-radius:40px;
-    font-weight:bold;
+    text-decoration:none;
 }
 
 .btn:hover{
     background:#9932cc;
+}
+
+/* Content Cards */
+
+.card{
+    width:80%;
+    margin:40px auto;
+    padding:30px;
+    border-radius:15px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.card h2{
+    color:#003366;
+    margin-bottom:15px;
 }
