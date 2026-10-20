@@ -1,35 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Living Water Church</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-<body>
+body{
+    font-family:Arial,sans-serif;
+}
 
-<div class="hero">
+/* Navigation */
 
-    <div class="hero-content">
+nav{
+    background:#003366;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
 
-        <h1>Living Water Church</h1>
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
 
-        <h2>
-            "He who believes in Me, out of his heart will flow rivers of living water."
-        </h2>
+nav ul{
+    display:flex;
+    list-style:none;
+}
 
-        <p>John 7:38</p>
+nav ul li{
+    margin-left:20px;
+}
 
-        <a href="https://youtube.com" class="btn">Watch Live</a>
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
 
-        <a href="giving.html" class="btn">Give Online</a>
+/* Hero */
 
-    </div>
+.hero{
+    height:100vh;
 
-</div>
+    background:
+    linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url('../living water coverpage.jpg');
 
-</body>
-</html>
-<!-- GitHub Pages Refresh -->
-<!-- Rebuild Trigger -->
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.hero-content{
+    color:white;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero-content h2{
+    max-width:800px;
+}
+
+.hero-content p{
+    margin:20px;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    margin:10px;
+    background:#800080;
+    color:white;
+    border-radius:40px;
+    text-decoration:none;
+}
+
+.btn:hover{
+    background:#9932cc;
+}
+
+/* Content Cards */
+
+.card{
+    width:80%;
+    margin:40px auto;
+    padding:30px;
+    border-radius:15px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.card h2{
+    color:#003366;
+    margin-bottom:15px;
+}
